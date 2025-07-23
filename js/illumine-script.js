@@ -664,6 +664,8 @@ function changeLanguage(lang) {
             Contact: 'Store Locations',
             About: 'Brand Story',
             Home: 'Home',
+            TermsPolicy3:'Term and Conditions',
+            ShippingPolicy3:'Shipping Policy',
             PrivatePolicy2: 'Privacy Policy',
             TermsPolicy2:'Term and Conditions',
             ShippingPolicy2:'Shipping Policy',
@@ -676,9 +678,17 @@ function changeLanguage(lang) {
             TermsPolicy:'Term and Conditions',
             ShippingPolicy:'Shipping Policy',
             Legal: 'Legal & Policies',
+            ShopAllTx: 'SHOP ALL',
+            InformationTx: 'Information:',
+            NumberTx:'Number:',
+            SizeTx:'Size:',
+            最新品_Label:'New',
+            ReferenceTx:'*Product images are for illustrative purposes only.',
+
             // Desktop (LT) category translations
             LTCategory: 'Category',
             LTAllProducts: 'Shop All',
+            LTAllProducts1: 'Shop All',
             LTNewArrivals: 'New Arrivals',
             LTNewArrivalsTx: 'New Arrivals',
             LTBestsellers: 'Bestsellers',
@@ -692,6 +702,10 @@ function changeLanguage(lang) {
             MobileNewArrivals: 'New Arrivals',
             MobileBestsellers: 'Bestsellers',
             MobileOnSale: 'On Sale',
+
+            // pd7008531 - Translation
+            pd7008531_headingTx_lang: 'Hong Kong Style Cha Chan Teng Postcard',
+            pd7008531_descriptionTx_lang: "Cha Chaan Teng is a uniquely Hong Kong-style dining establishment, originating in the mid-20th century and serving as a microcosm of the city's distinctive food culture.   More than just a simple restaurant, the Cha Chaan Teng is an integral part of everyday life for Hong Kong's working-class people."
         },
         zhtw: {
             HeadingTx: '此刻，有光。',
@@ -702,6 +716,8 @@ function changeLanguage(lang) {
             Contact: '實體店地址',
             About: '品牌故事',
             Home: '首頁',
+            TermsPolicy3:'條款及細則',
+            ShippingPolicy3:'運送政策',
             PrivatePolicy2: '私隱政策',
             TermsPolicy2:'條款及細則',
             ShippingPolicy2:'運送政策',
@@ -714,9 +730,17 @@ function changeLanguage(lang) {
             TermsPolicy:'條款及細則',
             ShippingPolicy:'運送政策',
             Legal: '法律與政策',
+            ShopAllTx: '所有商品',
+            InformationTx: '商品資訊:',
+            NumberTx:'商品編號:',
+            SizeTx:'尺寸:',
+            最新品_Label:'最新品',
+            ReferenceTx:'*產品圖片僅供參考，實際商品以實物為準。',
+
             // Desktop (LT) category translations
             LTCategory: '商品分類',
             LTAllProducts: '所有商品',
+            LTAllProducts1: '所有商品',
             LTNewArrivals: '最新商品',
             LTNewArrivalsTx: '最新商品',
             LTBestsellers: '熱賣商品',
@@ -731,6 +755,10 @@ function changeLanguage(lang) {
             MobileBestsellers: '熱賣商品',
             MobileOnSale: '特價商品',
 
+            // pd7008531 - Translation
+            pd7008531_headingTx_lang: '港式茶餐廳明信片',
+            pd7008531_descriptionTx_lang: '茶餐廳是香港特有的飲食場所，源於20世紀中葉，是香港獨有的飲食文化的縮影。茶餐廳不僅僅是簡單的餐館，更是香港平民百姓生活的一部分。'
+
         },
     };
 
@@ -743,6 +771,8 @@ function changeLanguage(lang) {
         Contact_lang: 'Contact',
         About_lang: 'About',
         Home_lang: 'Home',
+        TermsPolicy3_lang: 'TermsPolicy',
+        ShippingPolicy3_lang: 'ShippingPolicy',
         PrivatePolicy2_lang: 'PrivatePolicy',
         TermsPolicy2_lang: 'TermsPolicy',
         ShippingPolicy2_lang: 'ShippingPolicy',
@@ -755,8 +785,16 @@ function changeLanguage(lang) {
         TermsPolicy_lang: 'TermsPolicy',
         ShippingPolicy_lang: 'ShippingPolicy',
         Legal_lang: 'Legal',
+        ShopAllTx_lang:'ShopAllTx',
+        InformationTx_lang:'InformationTx',
+        NumberTx_lang:'NumberTx',
+        Size_lang:'SizeTx',
+        最新品_Label_lang:'最新品_Label',
+        ReferenceTx_lang: 'ReferenceTx',
+
         // Desktop (LT) category elements
         LTCategory_lang: 'LTCategory',
+        LTAllProducts1_lang: 'LTAllProducts1',
         LTAllProducts_lang: 'LTAllProducts',
         LTNewArrivals_lang: 'LTNewArrivals',
         LTNewArrivalsTx_lang: 'LTNewArrivalsTx',
@@ -775,13 +813,16 @@ function changeLanguage(lang) {
         YourCartIsEmpty_lang: 'YourCartIsEmpty',
         CartTx_lang: 'CartTx',
 
+        // pd7008531 - Translation
+        pd7008531_headingTx_lang: 'pd7008531_headingTx_lang',
+        pd7008531_descriptionTx_lang: 'pd7008531_descriptionTx_lang',
+
     };
 
     Object.keys(elements).forEach(elementId => {
         const element = document.getElementById(elementId);
         const translationKey = elements[elementId];
-        
-        if (element && translations[lang][translationKey]) {
+        if (element && translations[lang]?.[translationKey]) {
             element.textContent = translations[lang][translationKey];
         }
     });
