@@ -682,8 +682,11 @@ function changeLanguage(lang) {
             InformationTx: 'Information:',
             NumberTx:'Number:',
             SizeTx:'Size:',
-            最新品_Label:'New',
+            最新品_Label:'New Arrivals',
             ReferenceTx:'*Product images are for illustrative purposes only.',
+            所有產品_Cate: 'All Products',
+            最新品_Cate: 'New Arrivals',
+            暢銷品_Cate: 'Bestsellers',
 
             // Desktop (LT) category translations
             LTCategory: 'Category',
@@ -702,10 +705,6 @@ function changeLanguage(lang) {
             MobileNewArrivals: 'New Arrivals',
             MobileBestsellers: 'Bestsellers',
             MobileOnSale: 'On Sale',
-
-            // pd7008531 - Translation
-            pd7008531_headingTx_lang: 'Hong Kong Style Cha Chan Teng Postcard',
-            pd7008531_descriptionTx_lang: "Cha Chaan Teng is a uniquely Hong Kong-style dining establishment, originating in the mid-20th century and serving as a microcosm of the city's distinctive food culture.   More than just a simple restaurant, the Cha Chaan Teng is an integral part of everyday life for Hong Kong's working-class people."
         },
         zhtw: {
             HeadingTx: '此刻，有光。',
@@ -736,11 +735,14 @@ function changeLanguage(lang) {
             SizeTx:'尺寸:',
             最新品_Label:'最新品',
             ReferenceTx:'*產品圖片僅供參考，實際商品以實物為準。',
+            所有產品_Cate: '所有產品',
+            最新品_Cate: '最新品',
+            暢銷品_Cate: '暢銷品',
 
             // Desktop (LT) category translations
             LTCategory: '商品分類',
             LTAllProducts: '所有商品',
-            LTAllProducts1: '所有商品',
+            LTAllProducts1: '商品一覽',
             LTNewArrivals: '最新商品',
             LTNewArrivalsTx: '最新商品',
             LTBestsellers: '熱賣商品',
@@ -754,11 +756,6 @@ function changeLanguage(lang) {
             MobileNewArrivals: '最新商品',
             MobileBestsellers: '熱賣商品',
             MobileOnSale: '特價商品',
-
-            // pd7008531 - Translation
-            pd7008531_headingTx_lang: '港式茶餐廳明信片',
-            pd7008531_descriptionTx_lang: '茶餐廳是香港特有的飲食場所，源於20世紀中葉，是香港獨有的飲食文化的縮影。茶餐廳不僅僅是簡單的餐館，更是香港平民百姓生活的一部分。'
-
         },
     };
 
@@ -788,9 +785,12 @@ function changeLanguage(lang) {
         ShopAllTx_lang:'ShopAllTx',
         InformationTx_lang:'InformationTx',
         NumberTx_lang:'NumberTx',
-        Size_lang:'SizeTx',
+        SizeTx_lang:'SizeTx',
         最新品_Label_lang:'最新品_Label',
         ReferenceTx_lang: 'ReferenceTx',
+        所有產品_Cate_lang: '所有產品_Cate',
+        最新品_Cate_lang: '最新品_Cate',
+        暢銷品_Cate_lang: '暢銷品_Cate',
 
         // Desktop (LT) category elements
         LTCategory_lang: 'LTCategory',
@@ -812,10 +812,6 @@ function changeLanguage(lang) {
         //CartTx
         YourCartIsEmpty_lang: 'YourCartIsEmpty',
         CartTx_lang: 'CartTx',
-
-        // pd7008531 - Translation
-        pd7008531_headingTx_lang: 'pd7008531_headingTx_lang',
-        pd7008531_descriptionTx_lang: 'pd7008531_descriptionTx_lang',
 
     };
 

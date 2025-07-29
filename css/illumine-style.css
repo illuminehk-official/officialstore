@@ -4721,13 +4721,19 @@ a {
 
 .product-page-description {
   grid-column-gap: 64px;
-  grid-row-gap: 64px;
+  grid-row-gap: 16px;
   flex-flow: column;
   display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .max-width-480 {
   max-width: 480px;
+}
+
+.max-width-760 {
+  max-width: 760px;
 }
 
 .product-page-information {
