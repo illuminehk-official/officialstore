@@ -8,6 +8,7 @@
       <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon" />
       <link href="../images/favicon.png" rel="apple-touch-icon" />
       <link href="../css/illumine-style.css" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
       <style>
          body {
          -moz-font-smoothing: antialiased;
@@ -85,9 +86,9 @@
                      <a href="../storelocations.html" class="menu-item" id="Contact_lang">實體店地址</a>
                   </div>
                   <div data-wf-cart-type="rightSidebar">
-                     <button class="menu-item button third-white w-inline-block" onclick="changeLanguage('en')">EN</button>
+                     <button class="menu-item button third-white w-inline-block" onclick="changeLanguage('en')" id="lang-en" class="language-toggle">EN</button>
                      <a>|</a>
-                     <button class="menu-item button third-white w-inline-block" onclick="changeLanguage('zhtw')">繁體中文</button>
+                     <button class="menu-item button third-white w-inline-block" onclick="changeLanguage('zhtw')" id="lang-zh" class="language-toggle">繁體中文</button>
                   </div>
                   <div class="hamburger-menu"><img
                      src="https://cdn.prod.website-files.com/662a10b12951c71ef818e881/6630fdc132681725f8c9791f_Menu.svg"
@@ -170,20 +171,29 @@
                         <img src="https://cdn.prod.website-files.com/662a10b12951c71ef818e881/66323c7620984333c344258e_Arrow%20BendUp%20Left.svg" loading="lazy" alt="" class="icon-size-12">
                         <div class="medium-xs-uppercase" bis_skin_checked="1" id="ShopAllTx_lang">所有商品</div>
                      </a>
-                     <div class="product-name-and-price" bis_skin_checked="1">
-                        <h1 class="h1-small" id="pd7008531_headingTx_lang">港式茶餐廳明信片</h1>
-                        <div class="products-collection-price" bis_skin_checked="1">
-                           <div class="medium-s-uppercase" bis_skin_checked="1">$&nbsp;18.00&nbsp;HKD</div>
-                           <div class="products-collection-new-price price-invisible" bis_skin_checked="1">
-                              <div class="medium-s-uppercase color-red" bis_skin_checked="1">$&nbsp;18.00&nbsp;HKD</div>
-                              <div class="regular-s-strikethrough color-grey-50 illumine-dyn-bind-empty" bis_skin_checked="1"></div>
-                              <div class="regular-s-strikethrough color-grey-50" bis_skin_checked="1">$&nbsp;18.00&nbsp;HKD</div>
+                     <div class="product-name-and-price">
+                        <h1 class="h1-small lang-title" data-en="Hong Kong Style Cha Chan Teng Postcard" data-zh="港式茶餐廳明信片">港式茶餐廳明信片</h1>
+                        <div class="products-collection-price">
+                           <div class="medium-s-uppercase">$&nbsp;18.00&nbsp;HKD</div>
+                           <div class="products-collection-new-price price-invisible">
+                                 <div class="medium-s-uppercase color-red">$&nbsp;18.00&nbsp;HKD</div>
+                                 <div class="regular-s-strikethrough color-grey-50"></div>
                            </div>
                         </div>
                      </div>
-                  </div>
-                  <div class="product-page-description" bis_skin_checked="1">
-                     <p class="regular-s color-grey-60 max-width-480" id="pd7008531_descriptionTx_lang">茶餐廳是香港特有的飲食場所，源於20世紀中葉，是香港獨有的飲食文化的縮影。茶餐廳不僅僅是簡單的餐館，更是香港平民百姓生活的一部分。</p>
+
+                     <div class="product-page-description">
+                        <p class="regular-s color-grey-60 max-width-760 lang-description" 
+                           data-en="Cha Chaan Teng is a uniquely Hong Kong-style dining establishment, originating in the mid-20th century and serving as a microcosm of the city's distinctive food culture." 
+                           data-zh="茶餐廳是香港特有的飲食場所，源於20世紀中葉，是香港獨有的飲食文化的縮影。">
+                           茶餐廳是香港特有的飲食場所，源於20世紀中葉，是香港獨有的飲食文化的縮影。
+                        </p>
+                        <p class="regular-s color-grey-60 max-width-760 lang-description" 
+                           data-en="More than just a simple restaurant, the Cha Chaan Teng is an integral part of everyday life for Hong Kong's working-class people." 
+                           data-zh="茶餐廳不僅僅是簡單的餐館，更是香港平民百姓生活的一部分。">
+                           茶餐廳不僅僅是簡單的餐館，更是香港平民百姓生活的一部分。
+                        </p>
+                     </div>
                      <div class="product-page-information" bis_skin_checked="1">
                         <div class="regular-xs-uppercase color-grey-60" bis_skin_checked="1" id="InformationTx_lang">商品資訊:</div>
                         <div class="w-layout-grid product-information-grid" bis_skin_checked="1">
@@ -206,7 +216,7 @@
                            
                            <div class="button-and-legals" bis_skin_checked="1">
                               <small class="regular-s color-grey-60 max-width-480" id="ReferenceTx_lang">*產品圖片僅供參考，實際商品以實物為準。</small>
-                              <input type="submit" href="https://ig.me/m/illumine.hk" class="w-commerce-commerceaddtocartbutton button primary-black" onclick="window.open('https://ig.me/m/illumine.hk', '_blank')" value="前往 Instagram 官方帳號進行下單訂購">
+                              <input type="button" class="button lang-instagram primary-black" data-en="Order on the official Instagram" data-zh="前往 Instagram 官方帳號進行下單訂購" onclick="window.open('https://ig.me/m/illumine.hk', '_blank')" value="前往 Instagram 官方帳號進行下單訂購">
                               <div class="legal-buttons" bis_skin_checked="1">
                                  <a href="../shippingPV.html" class="tertiary-button w-inline-block">
                                     <div class="medium-xs-uppercase" bis_skin_checked="1" id="ShippingPolicy3_lang">運送政策</div>
@@ -248,7 +258,24 @@
          </div>
       </section>
       <script src="../js/jquery.js" type="text/javascript"></script>
-      <script src="../js/shopall_TxFull.js" type="text/javascript"></script>
-            <script src="../js/illumine-script.js" type="text/javascript"></script>
+      <script>
+         const langTitles = document.querySelectorAll('.lang-title');
+         const langDescriptions = document.querySelectorAll('.lang-description');
+         const langInstagramButton = document.querySelector('.lang-instagram');
+
+         function setLanguage(lang) {
+            langTitles.forEach(title => {
+                  title.textContent = title.getAttribute(`data-${lang}`);
+            });
+            langDescriptions.forEach(description => {
+                  description.innerHTML = description.getAttribute(`data-${lang}`);
+            });
+            langInstagramButton.value = langInstagramButton.getAttribute(`data-${lang}`);
+         }
+
+         document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
+         document.getElementById('lang-zh').addEventListener('click', () => setLanguage('zh'));
+      </script>
+      <script src="../js/illumine-script.js" type="text/javascript"></script>
    </body>
 </html>
