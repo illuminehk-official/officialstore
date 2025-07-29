@@ -152,7 +152,7 @@
                <div class="product-page-images-wrapper" bis_skin_checked="1">
                   <div class="product-page-collection-badges-wrapper" bis_skin_checked="1">
                      <div class="products-collection-badge" bis_skin_checked="1">
-                        <div class="regular-xs-uppercase" bis_skin_checked="1" id="最新品_Label_lang">最新品</div>
+                        <div class="regular-xs-uppercase lang-label" data-en="New Arrivals" data-zh="最新品">最新品</div>
                      </div>
                   </div>
                   <div class="product-page-image-wrapper" bis_skin_checked="1"><img loading="lazy" src="../items/pd7008531/pd7008531s1.png" sizes="(max-width: 767px) 80vw, (max-width: 991px) 560px, 45vw" class="product-page-image"></div>
@@ -262,6 +262,7 @@
          const langTitles = document.querySelectorAll('.lang-title');
          const langDescriptions = document.querySelectorAll('.lang-description');
          const langInstagramButton = document.querySelector('.lang-instagram');
+         const langLabels = document.querySelectorAll('.lang-label');
 
          function setLanguage(lang) {
             langTitles.forEach(title => {
@@ -269,6 +270,9 @@
             });
             langDescriptions.forEach(description => {
                   description.innerHTML = description.getAttribute(`data-${lang}`);
+            });
+            langLabels.forEach(label => {
+                  label.textContent = label.getAttribute(`data-${lang}`);
             });
             langInstagramButton.value = langInstagramButton.getAttribute(`data-${lang}`);
          }

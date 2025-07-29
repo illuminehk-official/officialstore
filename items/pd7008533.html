@@ -10,15 +10,9 @@
       <link href="../css/illumine-style.css" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
       <style>
-         .products-tabs-menu {
-         display: flex;
-         cursor: pointer;
-         }
-         .product {
-         display: none;
-         }
-         .visible {
-         display: block;
+         body {
+         -moz-font-smoothing: antialiased;
+         -o-font-smoothing: antialiased;
          }
       </style>
       <script>
@@ -152,102 +146,90 @@
          </div>
       </nav>
       <!---->
-      <section class="section fixed-menu-margin-top shop-section margin-bottom-128">
-         <div class="w-layout-blockcontainer container w-container">
-            <h1 class="h1-medium margin-bottom-28" id="LTAllProducts1_lang">商品一覽</h1>
-            <div data-current="All Products" class="products-tabs w-tabs">
-               <div class="products-tabs-menu illu-tab-menu">
-                  <a class="sorting-tab w-inline-block illu-tab-link illu--current" data-filter="all" id="所有產品_Cate_lang">所有產品</a>
-                  <a class="sorting-tab w-inline-block illu-tab-link" data-filter="newarrivals" id="最新品_Cate_lang">最新品</a>
-                  <a class="sorting-tab w-inline-block illu-tab-link" data-filter="bestsellers" id="暢銷品_Cate_lang">暢銷品</a>
+      <section class="section margin-bottom-128">
+         <div class="w-layout-blockcontainer container-wide w-container" bis_skin_checked="1">
+            <div class="two-columns-page-content" bis_skin_checked="1">
+               <div class="product-page-images-wrapper" bis_skin_checked="1">
+                  <div class="product-page-collection-badges-wrapper" bis_skin_checked="1">
+                     <!--
+                     <div class="products-collection-badge" bis_skin_checked="1">
+                        <div class="regular-xs-uppercase lang-label" data-en="New Arrivals" data-zh="最新品">最新品</div>
+                     </div>
+                     -->
+                  </div>
+                  <div class="product-page-image-wrapper" bis_skin_checked="1"><img loading="lazy" src="../items/pd7008533/pd7008533s1.png" sizes="(max-width: 767px) 80vw, (max-width: 991px) 560px, 45vw" class="product-page-image"></div>
+                  <div class="product-page-images-collection w-dyn-list w-dyn-items-repeater-ref" bis_skin_checked="1">
+                     <!--
+                     <div role="list" class="product-page-images-collection-wrapper w-dyn-items" data-wf-collection="f_more_images_4dr" bis_skin_checked="1">
+                        <div role="listitem" class="product-page-image-wrapper w-dyn-item w-dyn-repeater-item" bis_skin_checked="1"><img loading="lazy" src="../items/pd7008533/pd7008533s2.png" alt="" class="product-page-image"></div>
+                        <div role="listitem" class="product-page-image-wrapper w-dyn-item w-dyn-repeater-item" bis_skin_checked="1"><img loading="lazy" src="../items/pd7008533/pd7008533s3.png" alt="" class="product-page-image"></div>
+                     </div>
+                  -->
+                  </div>
                </div>
-               <div class="products-tabs-content w-tab-content">
-                  <div class="w-tab-pane w--tab-active">
-                     <div class="products-collection w-dyn-list products">
-                        <div class="products">
-                           <div role="list" class="products-collection-list shop-pages-list w-dyn-items">
-
-                              <!--PD7008533-->
-                              <div role="listitem" class="products-collection-item w-dyn-item product newarrivals visible">
-                                 <a href="../items/pd7008533.html" class="products-collection-link w-inline-block">
-                                    <div class="products-collection-image-wrapper">
-                                          <div class="products-collection-badges-wrapper">
-                                             <!--
-                                             <div class="products-collection-badge">
-                                                <div class="regular-xs-uppercase lang-label" data-en="New Arrivals" data-zh="最新品">最新品</div>
-                                             </div>
-                                             -->
-                                          </div>
-                                          <img loading="lazy" src="../items/pd7008533/pd7008533s1.png" sizes="(max-width: 479px) 68vw, (max-width: 767px) 328px, (max-width: 991px) 40vw, 26vw" class="products-collection-image" />
-                                    </div>
-                                    <div class="products-collection-info">
-                                          <div class="regular-s-uppercase color-grey-60 lang-title" data-en="Sell Home Electrical Postcard" data-zh="收買舊電器明信片">收買舊電器明信片</div>
-                                          <div class="products-collection-price">
-                                             <div class="medium-s-uppercase">$&nbsp;18.00&nbsp;HKD</div>
-                                             <div class="products-collection-new-price price-invisible">
-                                                <div class="medium-s-uppercase color-red">$&nbsp;18.00&nbsp;HKD</div>
-                                                <div class="regular-s-strikethrough color-grey-50"></div>
-                                             </div>
-                                          </div>
-                                    </div>
-                                 </a>
-                              </div>
-                              <!--PD7008533 END-->
-
-                              <!--PD7008532-->
-                              <div role="listitem" class="products-collection-item w-dyn-item product newarrivals visible">
-                                 <a href="../items/pd7008532.html" class="products-collection-link w-inline-block">
-                                    <div class="products-collection-image-wrapper">
-                                          <div class="products-collection-badges-wrapper">
-                                             <!--
-                                             <div class="products-collection-badge">
-                                                <div class="regular-xs-uppercase lang-label" data-en="New Arrivals" data-zh="最新品">最新品</div>
-                                             </div>
-                                             -->
-                                          </div>
-                                          <img loading="lazy" src="../items/pd7008532/pd7008532s1.png" sizes="(max-width: 479px) 68vw, (max-width: 767px) 328px, (max-width: 991px) 40vw, 26vw" class="products-collection-image" />
-                                    </div>
-                                    <div class="products-collection-info">
-                                          <div class="regular-s-uppercase color-grey-60 lang-title" data-en="Wong Tai Sin Fortune Postcard" data-zh="黃大仙靈簽明信片">黃大仙靈簽明信片</div>
-                                          <div class="products-collection-price">
-                                             <div class="medium-s-uppercase">$&nbsp;18.00&nbsp;HKD</div>
-                                             <div class="products-collection-new-price price-invisible">
-                                                <div class="medium-s-uppercase color-red">$&nbsp;18.00&nbsp;HKD</div>
-                                                <div class="regular-s-strikethrough color-grey-50"></div>
-                                             </div>
-                                          </div>
-                                    </div>
-                                 </a>
-                              </div>
-                              <!--PD7008532 END-->
-
-                              <!--PD7008531-->
-                              <div role="listitem" class="products-collection-item w-dyn-item product newarrivals visible">
-                                 <a href="../items/pd7008531.html" class="products-collection-link w-inline-block">
-                                    <div class="products-collection-image-wrapper">
-                                          <div class="products-collection-badges-wrapper">
-                                             <div class="products-collection-badge">
-                                                <div class="regular-xs-uppercase lang-label" data-en="New Arrivals" data-zh="最新品">最新品</div>
-                                             </div>
-                                          </div>
-                                          <img loading="lazy" src="../items/pd7008531/pd7008531s1.png" sizes="(max-width: 479px) 68vw, (max-width: 767px) 328px, (max-width: 991px) 40vw, 26vw" class="products-collection-image" />
-                                    </div>
-                                    <div class="products-collection-info">
-                                          <div class="regular-s-uppercase color-grey-60 lang-title" data-en="Hong Kong Style Cha Chan Teng Postcard" data-zh="港式茶餐廳明信片">港式茶餐廳明信片</div>
-                                          <div class="products-collection-price">
-                                             <div class="medium-s-uppercase">$&nbsp;18.00&nbsp;HKD</div>
-                                             <div class="products-collection-new-price price-invisible">
-                                                <div class="medium-s-uppercase color-red">$&nbsp;18.00&nbsp;HKD</div>
-                                                <div class="regular-s-strikethrough color-grey-50"></div>
-                                             </div>
-                                          </div>
-                                    </div>
-                                 </a>
-                              </div>
-                              <!--PD7008531 END-->
+               <div class="product-page-info" bis_skin_checked="1">
+                  <div class="product-main-info-and-button" bis_skin_checked="1">
+                     <a href="../shop/shop-all.html" class="tertiary-button w-inline-block">
+                        <img src="https://cdn.prod.website-files.com/662a10b12951c71ef818e881/66323c7620984333c344258e_Arrow%20BendUp%20Left.svg" loading="lazy" alt="" class="icon-size-12">
+                        <div class="medium-xs-uppercase" bis_skin_checked="1" id="ShopAllTx_lang">所有商品</div>
+                     </a>
+                     <div class="product-name-and-price">
+                        <h1 class="h1-small lang-title" data-en="Sell Home Electrical Postcard" data-zh="收買舊電器明信片">收買舊電器明信片</h1>
+                        <div class="products-collection-price">
+                           <div class="medium-s-uppercase">$&nbsp;18.00&nbsp;HKD</div>
+                           <div class="products-collection-new-price price-invisible">
+                                 <div class="medium-s-uppercase color-red">$&nbsp;18.00&nbsp;HKD</div>
+                                 <div class="regular-s-strikethrough color-grey-50"></div>
                            </div>
                         </div>
                      </div>
+
+                     <div class="product-page-description">
+                        <p class="regular-s color-grey-60 max-width-760 lang-description" 
+                           data-en="Recycler refers to individuals or small businesses that offer recycling services for discarded items. They provide a simple and convenient channel for consumers to easily dispose of old items generated in their daily lives." 
+                           data-zh="「收買佬」的回收服務是一些收購廢棄物的個人或小型企業，他們提供簡單便捷的回收渠道。讓消費者可以輕鬆地處理一些生活中產生的廢舊物品。">
+                           「收買佬」的回收服務是一些收購廢棄物的個人或小型企業，他們提供簡單便捷的回收渠道。讓消費者可以輕鬆地處理一些生活中產生的廢舊物品。
+                        </p>
+                        <p class="regular-s color-grey-60 max-width-760 lang-description" 
+                           data-en="Recycler provides a simple and convenient recycling channel, allowing consumers to easily dispose of old items generated in their daily lives." 
+                           data-zh="「收買佬」提供簡單便捷的回收渠道。讓消費者可以輕鬆地處理一些生活中產生的廢舊物品。">
+                           「收買佬」提供簡單便捷的回收渠道。讓消費者可以輕鬆地處理一些生活中產生的廢舊物品。
+                        </p>
+                     </div>
+                     <div class="product-page-information" bis_skin_checked="1">
+                        <div class="regular-xs-uppercase color-grey-60" bis_skin_checked="1" id="InformationTx_lang">商品資訊:</div>
+                        <div class="w-layout-grid product-information-grid" bis_skin_checked="1">
+                           <div class="product-information-grid-block" bis_skin_checked="1">
+                              <div class="medium-xs-uppercase width-68" bis_skin_checked="1" id="NumberTx_lang">商品編號:</div>
+                              <div class="regular-xs-uppercase width-80" bis_skin_checked="1">7008533</div>
+                           </div>
+                           <div class="product-information-grid-block" bis_skin_checked="1">
+                              <div class="medium-xs-uppercase width-68" bis_skin_checked="1" id="SizeTx_lang">尺寸:</div>
+                              <div class="regular-xs-uppercase width-40" bis_skin_checked="1">148mm x 100mm</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div bis_skin_checked="1">
+                     <form data-node-type="commerce-add-to-cart-form" class="w-commerce-commerceaddtocartform add-to-cart-default">
+                        <div class="product-page-add-cart" bis_skin_checked="1">
+                           <div data-preselect-default-variant="true" class="product-page-option-list-wrapper" role="group" bis_skin_checked="1">
+                           </div>
+                           
+                           <div class="button-and-legals" bis_skin_checked="1">
+                              <small class="regular-s color-grey-60 max-width-480" id="ReferenceTx_lang">*產品圖片僅供參考，實際商品以實物為準。</small>
+                              <input type="button" class="button lang-instagram primary-black" data-en="Order on the official Instagram" data-zh="前往 Instagram 官方帳號進行下單訂購" onclick="window.open('https://ig.me/m/illumine.hk', '_blank')" value="前往 Instagram 官方帳號進行下單訂購">
+                              <div class="legal-buttons" bis_skin_checked="1">
+                                 <a href="../shippingPV.html" class="tertiary-button w-inline-block">
+                                    <div class="medium-xs-uppercase" bis_skin_checked="1" id="ShippingPolicy3_lang">運送政策</div>
+                                 </a>
+                                 <a href="../termsPY.html" class="tertiary-button w-inline-block">
+                                    <div class="medium-xs-uppercase" bis_skin_checked="1" id="TermsPolicy3_lang">條款及細則</div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
                   </div>
                </div>
             </div>
@@ -278,43 +260,28 @@
          </div>
       </section>
       <script src="../js/jquery.js" type="text/javascript"></script>
-      <script src="../js/illumine-script.js" type="text/javascript"></script>
       <script>
-         const tabs = document.querySelectorAll('.illu-tab-link');
-         const products = document.querySelectorAll('.product');
-         
-         tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                  const filter = tab.getAttribute('data-filter');
-         
-                  tabs.forEach(t => t.classList.remove('illu--current'));
-                  tab.classList.add('illu--current');
-         
-                  products.forEach(product => {
-                     if (filter === 'all' || product.classList.contains(filter)) {
-                        product.classList.add('visible');
-                     } else {
-                        product.classList.remove('visible');
-                     }
-                  });
-            });
-         });
-
+         const langTitles = document.querySelectorAll('.lang-title');
+         const langDescriptions = document.querySelectorAll('.lang-description');
+         const langInstagramButton = document.querySelector('.lang-instagram');
          const langLabels = document.querySelectorAll('.lang-label');
-            const langTitles = document.querySelectorAll('.lang-title');
 
-            function setLanguage(lang) {
-               langLabels.forEach(label => {
-                     label.textContent = label.getAttribute(`data-${lang}`);
-               });
-               langTitles.forEach(title => {
-                     title.textContent = title.getAttribute(`data-${lang}`);
-               });
-            }
+         function setLanguage(lang) {
+            langTitles.forEach(title => {
+                  title.textContent = title.getAttribute(`data-${lang}`);
+            });
+            langDescriptions.forEach(description => {
+                  description.innerHTML = description.getAttribute(`data-${lang}`);
+            });
+            langLabels.forEach(label => {
+                  label.textContent = label.getAttribute(`data-${lang}`);
+            });
+            langInstagramButton.value = langInstagramButton.getAttribute(`data-${lang}`);
+         }
 
-            document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
-            document.getElementById('lang-zh').addEventListener('click', () => setLanguage('zh'));
-
+         document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
+         document.getElementById('lang-zh').addEventListener('click', () => setLanguage('zh'));
       </script>
+      <script src="../js/illumine-script.js" type="text/javascript"></script>
    </body>
 </html>
