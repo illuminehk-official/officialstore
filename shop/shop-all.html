@@ -8,10 +8,17 @@
       <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon" />
       <link href="../images/favicon.png" rel="apple-touch-icon" />
       <link href="../css/illumine-style.css" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
       <style>
-         body {
-         -moz-font-smoothing: antialiased;
-         -o-font-smoothing: antialiased;
+         .products-tabs-menu {
+         display: flex;
+         cursor: pointer;
+         }
+         .product {
+         display: none;
+         }
+         .visible {
+         display: block;
          }
       </style>
       <script>
@@ -85,9 +92,9 @@
                      <a href="../storelocations.html" class="menu-item" id="Contact_lang">實體店地址</a>
                   </div>
                   <div data-wf-cart-type="rightSidebar">
-                     <button class="menu-item button third-white w-inline-block" onclick="changeLanguage('en')">EN</button>
+                     <button class="menu-item button third-white w-inline-block" onclick="changeLanguage('en')" id="lang-en" class="language-toggle">EN</button>
                      <a>|</a>
-                     <button class="menu-item button third-white w-inline-block" onclick="changeLanguage('zhtw')">繁體中文</button>
+                     <button class="menu-item button third-white w-inline-block" onclick="changeLanguage('zhtw')" id="lang-zh" class="language-toggle">繁體中文</button>
                   </div>
                   <div class="hamburger-menu"><img
                      src="https://cdn.prod.website-files.com/662a10b12951c71ef818e881/6630fdc132681725f8c9791f_Menu.svg"
@@ -145,48 +152,51 @@
          </div>
       </nav>
       <!---->
-  <section class="section fixed-menu-margin-top shop-section margin-bottom-128">
-    <div class="w-layout-blockcontainer container w-container">
-      <h1 class="h1-medium margin-bottom-28" id="LTAllProducts1_lang">所有商品</h1>
-      <div data-current="All Products" data-easing="ease" data-duration-in="300" data-duration-out="100"
-        class="products-tabs w-tabs">
-        <div class="products-tabs-menu w-tab-menu"><a class="sorting-tab w-inline-block w-tab-link w--current">
-            <div>All Products</div>
-          </a>
-        </div>
-        <div class="products-tabs-content w-tab-content">
-          <div class="w-tab-pane w--tab-active">
-            <div class="products-collection w-dyn-list">
-              <div role="list" class="products-collection-list shop-pages-list w-dyn-items">
-                <div role="listitem" class="products-collection-item w-dyn-item"><a href="../items/pd7008531.html"
-                    class="products-collection-link w-inline-block">
-                    <div class="products-collection-image-wrapper">
-                      <div class="products-collection-badges-wrapper">
-                        <div class="products-collection-badge" bis_skin_checked="1">
-                        <div class="regular-xs-uppercase" bis_skin_checked="1" id="最新品_Label_lang">最新品</div>
-                     </div>
-                      </div><img loading="lazy" src="../items/pd7008531/pd7008531s1.png" sizes="(max-width: 479px) 68vw, (max-width: 767px) 328px, (max-width: 991px) 40vw, 26vw" class="products-collection-image" />
-                    </div>
-                    <div class="products-collection-info">
-                      <div class="regular-s-uppercase color-grey-60" id="pd7008531_headingTx_lang">港式茶餐廳明信片</div>
-                      <div class="products-collection-price" bis_skin_checked="1">
-                           <div class="medium-s-uppercase" bis_skin_checked="1">$&nbsp;18.00&nbsp;HKD</div>
-                           <div class="products-collection-new-price price-invisible" bis_skin_checked="1">
-                              <div class="medium-s-uppercase color-red" bis_skin_checked="1">$&nbsp;18.00&nbsp;HKD</div>
-                              <div class="regular-s-strikethrough color-grey-50 illumine-dyn-bind-empty" bis_skin_checked="1"></div>
-                              <div class="regular-s-strikethrough color-grey-50" bis_skin_checked="1">$&nbsp;18.00&nbsp;HKD</div>
+      <section class="section fixed-menu-margin-top shop-section margin-bottom-128">
+         <div class="w-layout-blockcontainer container w-container">
+            <h1 class="h1-medium margin-bottom-28" id="LTAllProducts1_lang">商品一覽</h1>
+            <div data-current="All Products" class="products-tabs w-tabs">
+               <div class="products-tabs-menu illu-tab-menu">
+                  <a class="sorting-tab w-inline-block illu-tab-link illu--current" data-filter="all" id="所有產品_Cate_lang">所有產品</a>
+                  <a class="sorting-tab w-inline-block illu-tab-link" data-filter="newarrivals" id="最新品_Cate_lang">最新品</a>
+                  <a class="sorting-tab w-inline-block illu-tab-link" data-filter="bestsellers" id="暢銷品_Cate_lang">暢銷品</a>
+               </div>
+               <div class="products-tabs-content w-tab-content">
+                  <div class="w-tab-pane w--tab-active">
+                     <div class="products-collection w-dyn-list products">
+                        <div class="products">
+                           <div role="list" class="products-collection-list shop-pages-list w-dyn-items">
+                              <div role="listitem" class="products-collection-item w-dyn-item product newarrivals visible">
+                                 <a href="../items/pd7008531.html" class="products-collection-link w-inline-block">
+                                    <div class="products-collection-image-wrapper">
+                                          <div class="products-collection-badges-wrapper">
+                                             <div class="products-collection-badge">
+                                                <div class="regular-xs-uppercase lang-label" data-en="New Arrivals" data-zh="最新品">最新品</div>
+                                             </div>
+                                          </div>
+                                          <img loading="lazy" src="../items/pd7008531/pd7008531s1.png" sizes="(max-width: 479px) 68vw, (max-width: 767px) 328px, (max-width: 991px) 40vw, 26vw" class="products-collection-image" />
+                                    </div>
+                                    <div class="products-collection-info">
+                                          <div class="regular-s-uppercase color-grey-60 lang-title" data-en="Hong Kong Style Cha Chan Teng Postcard" data-zh="港式茶餐廳明信片">港式茶餐廳明信片</div>
+                                          <div class="products-collection-price">
+                                             <div class="medium-s-uppercase">$&nbsp;18.00&nbsp;HKD</div>
+                                             <div class="products-collection-new-price price-invisible">
+                                                <div class="medium-s-uppercase color-red">$&nbsp;18.00&nbsp;HKD</div>
+                                                <div class="regular-s-strikethrough color-grey-50"></div>
+                                             </div>
+                                          </div>
+                                    </div>
+                                 </a>
+                              </div>
                            </div>
                         </div>
-                    </div>
-                  </a></div>
-              </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="footer">
+         </div>
+      </section>
+      <section class="footer">
          <div class="illu-layout-blockcontainer container illu-container">
             <div class="footer-content">
                <div class="footer-top">
@@ -211,7 +221,43 @@
          </div>
       </section>
       <script src="../js/jquery.js" type="text/javascript"></script>
-      <script src="../js/shopall_TxFull.js" type="text/javascript"></script>
-            <script src="../js/illumine-script.js" type="text/javascript"></script>
+      <script src="../js/illumine-script.js" type="text/javascript"></script>
+      <script>
+         const tabs = document.querySelectorAll('.illu-tab-link');
+         const products = document.querySelectorAll('.product');
+         
+         tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                  const filter = tab.getAttribute('data-filter');
+         
+                  tabs.forEach(t => t.classList.remove('illu--current'));
+                  tab.classList.add('illu--current');
+         
+                  products.forEach(product => {
+                     if (filter === 'all' || product.classList.contains(filter)) {
+                        product.classList.add('visible');
+                     } else {
+                        product.classList.remove('visible');
+                     }
+                  });
+            });
+         });
+
+         const langLabels = document.querySelectorAll('.lang-label');
+            const langTitles = document.querySelectorAll('.lang-title');
+
+            function setLanguage(lang) {
+               langLabels.forEach(label => {
+                     label.textContent = label.getAttribute(`data-${lang}`);
+               });
+               langTitles.forEach(title => {
+                     title.textContent = title.getAttribute(`data-${lang}`);
+               });
+            }
+
+            document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
+            document.getElementById('lang-zh').addEventListener('click', () => setLanguage('zh'));
+
+      </script>
    </body>
 </html>
